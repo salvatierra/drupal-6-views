@@ -131,7 +131,7 @@ $handler->override_option('filters', array(
       'value' => NULL,
       'min' => NULL,
       'max' => NULL,
-      'default_date' => '10-1-2014',
+      'default_date' => 'now -1 day',
       'default_to_date' => '',
     ),
     'group' => '0',
@@ -146,7 +146,7 @@ $handler->override_option('filters', array(
     'date_method' => 'AND',
     'granularity' => 'day',
     'form_type' => 'date_select',
-    'default_date' => '10-1-2014',
+    'default_date' => 'now -1 day',
     'default_to_date' => '',
     'year_range' => '-3:+3',
     'id' => 'field_meeting_date_value',
@@ -168,7 +168,6 @@ $handler->override_option('title', 'Rolling Calendar');
 $handler->override_option('header', '<p style="text-align: right"><a href="/en/group-activities/calendar">Full Calendar View</a>');
 $handler->override_option('header_format', '3');
 $handler->override_option('header_empty', 0);
-$handler->override_option('items_per_page', 5);
 $handler->override_option('style_plugin', 'table');
 $handler->override_option('style_options', NULL);
 $handler = $view->new_display('block', 'Block', 'block_1');
